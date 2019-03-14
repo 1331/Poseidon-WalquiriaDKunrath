@@ -85,3 +85,69 @@
     -moz-transform:rotateY(0);
     transform:rotateY(0)
 }
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,rgba(16, 199, 231, 0.466),rgba(53, 39, 248, 0.521)) ,url(../img/maos.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 81vh,0 100%)
+}
+
+.logo-box{
+    position: absolute;
+    top:30px;
+    left:10px;
+}
+
+.logo{
+    height: 100px;
+}
+
+.text-header-primary{
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.text-header-primary-main{
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 12.5px;
+
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s; 
+    animation-iteration-count: 3; 
+}
+
+.text-header-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 14.3px;
+}
+
+.text-box{
+    position: absolute;
+    top: 55%;
+    left:25%;
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        translate: translateX(-100px);
+    }
+
+    80%{
+        translate: translateX(10px); 
+    }
+
+    100%{
+        opacity: 1;
+        translate: translateX(0);
+    }
+}
